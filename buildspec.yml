@@ -30,7 +30,7 @@ phases:
   post_build:
     commands:
       - mvn package
-      - mv target/homey-0.0.1.jar homey-0.0.1.jar
+      - mv target/youtility-0.0.1.jar youtility-0.0.1.jar
 artifacts:
   files:
     - '**/*'
