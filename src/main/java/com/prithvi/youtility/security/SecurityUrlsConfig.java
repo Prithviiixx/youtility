@@ -29,7 +29,7 @@ public class SecurityUrlsConfig {
         http.cors().configurationSource(request -> {
             var cors = new CorsConfiguration();
             cors.setAllowedOrigins(List.of("http://localhost:3000", "http://127.0.0.1:3000",
-                    "http://103.226.31.73:3000", "http://honeyspacefe.eu-west-1.elasticbeanstalk.com",
+                    "http://103.226.31.73:3000",
                     "http://22202625-youtility.s3-website-eu-west-1.amazonaws.com"));
             cors.setAllowedMethods(List.of("GET","POST", "PUT", "DELETE", "OPTIONS"));
             cors.setAllowedHeaders(List.of("*"));
