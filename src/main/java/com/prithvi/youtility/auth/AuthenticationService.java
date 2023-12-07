@@ -55,7 +55,7 @@ public class AuthenticationService {
             var user = userRepository.findByUsername(request.getUsername())
                     .orElseThrow();
             jwtToken = jwtService.generateToken(user);
-                revokeAllUserTokens(user);
+            revokeAllUserTokens(user);
             saveUserToken(user, jwtToken);
             respMessage = "SUCCESS";
         } catch (Exception e) {
